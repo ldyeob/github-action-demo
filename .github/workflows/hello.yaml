@@ -8,6 +8,7 @@ jobs:
       COURSE: Cloud Computing 
     steps:
       - run: echo "Hello from ${COURSE}!"
+      - name: Hello Github Action
       - run: echo "Hello from GitHub Actions!"
       - run: echo "I'll list files."
       - run: ls -al

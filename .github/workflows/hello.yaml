@@ -5,10 +5,9 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     env:
-        COURSE: Cloud Computing 
+      COURSE: Cloud Computing 
     steps:
-      - name: Say Hello
+      - run: echo "Hello from ${COURSE}!"
       - run: echo "Hello from GitHub Actions!"
       - run: echo "I'll list files."
       - run: ls -al
-      - run: echo "Hello from ${COURSE}!"
